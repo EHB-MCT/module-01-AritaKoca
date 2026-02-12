@@ -1,4 +1,4 @@
-const fortunes = [
+const fortunes = [ // array want []
     "A fresh start will put you on your way.",
     "Breathe in, breathe out, code.",
     "Your creativity will lead you to success.",
@@ -14,11 +14,17 @@ const fortunes = [
 ];
 
 // 1. Select Elements
-let display = document.querySelector("#fortune-display");
 let button = document.querySelector("#cookie-btn");
+let display = document.querySelector("#fortune-display");
+console.log(display);
 
 // 2. Add event Listener
-//      generate a random index
-//      get the fortune string
-//      update the display
-
+button.addEventListener('click', function () {
+    console.log("CLICKEDCLICKED");
+    // random between 0 - fortune.length
+    //      generate a random index
+    //      get the fortune string
+    //      update the display
+    let randomIndex = Math.floor(Math.random() * fortunes.length);
+    display.innerText = fortunes[randomIndex];
+});
