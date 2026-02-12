@@ -21,10 +21,10 @@ console.log(display);
 // 2. Add event Listener
 button.addEventListener('click', function () {
     console.log("CLICKEDCLICKED");
-    // random between 0 - fortune.length
     //      generate a random index
     //      get the fortune string
     //      update the display
+    // random between 0 - fortune.length
     let randomIndex = Math.floor(Math.random() * fortunes.length);
     display.innerText = fortunes[randomIndex];
 });
