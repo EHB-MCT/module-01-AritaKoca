@@ -58,3 +58,4 @@ buttonFR.addEventListener("click", function () {
 image.src = "./appel.jpg";
 image.alt = "Een rode appel";
 article.insertBefore(image, subtitle);
+// document.querryselector(".article").prepend(imgElement);
